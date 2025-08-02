@@ -1,0 +1,37 @@
+#+TITLE: dd-taskrunner-javascript.el
+
+~dd-taskrunner-javascript.el~ provides a convenient =consult=-powered interface
+for running tasks and scripts in JavaScript projects. It detects your project’s
+package manager and shows available ~npm~/*~yarn~/*~pnpm~/*~bun~ scripts and
+common commands, letting you quickly execute them.
+
+[[file:example-monorepo.png][Screenshot of usage in a monorepo]]
+
+** Contents :toc:
+  - [[#features][Features]]
+  - [[#requirements][Requirements]]
+  - [[#usage][Usage]]
+  - [[#customization][Customization]]
+
+** Features
+- Detects npm, yarn, pnpm, or bun from lockfiles.
+- Lists all defined scripts in ~package.json~.
+- Presents common commands (install, outdated, etc.).
+- Integrates with =consult= for multi-source selection.
+- Smartly detects project roots.
+
+** Requirements
+- [[https://github.com/minad/consult][Consult]]
+- [[https://github.com/minad/marginalia][Marginalia]] (recommended)
+
+** Usage
+Run ~M-x dd-taskrunner-javascript~ in any JavaScript/Node/bun/pnpm project.
+Select a script or command from the menu to execute it.
+
+** Customization
+- ~dd-taskrunner-javascript-lockfile-to-manager-alist~: Which lockfile maps to
+  which manager.
+- ~dd-taskrunner-javascript-default-manager~: Used if no lockfile found.
+- ~dd-taskrunner-javascript-commands~: Add/edit default commands.
+
+Customize via ~M-x customize-group RET dd-taskrunner-javascript RET~.
