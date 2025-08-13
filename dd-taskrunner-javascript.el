@@ -1,7 +1,7 @@
 ;;; dd-taskrunner-javascript.el --- Consult-based JS task runner -*- lexical-binding: t; -*-
 
 ;; Author: Diogo Doreto
-;; Package-Requires: ((emacs "30.1") (consult "2.5"))
+;; Package-Requires: ((emacs "29.4") (consult "2.5"))
 ;; Keywords: javascript, task-runner, npm, bun, yarn, pnpm
 ;; URL: https://github.com/DiogoDoreto/dd-taskrunner-javascript.el
 
